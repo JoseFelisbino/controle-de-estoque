@@ -1,0 +1,32 @@
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: var(--spacing);
+  background: white;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background: var(--color-primary);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  cursor: pointer;
+
+
+}
+
+
+  

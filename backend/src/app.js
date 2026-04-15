@@ -13,6 +13,29 @@ dotenv.config();
 
 const app = express();
 
+const allowedOrigins = [
+  "http://127.0.0.1:5500",
+  "http://localhost:5500"
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+
+    if (!origin) return callback(null, true);
+
+    const isLocalhost =
+      origin.startsWith("http://localhost") ||
+      origin.startsWith("http://127.0.0.1");
+
+    if (isLocalhost) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(cookieParser());
 app.use("/auth", authRoutes);
@@ -20,10 +43,7 @@ app.use("/categorias", categoriaRoutes);
 app.use("/produtos", produtoRoutes);
 app.use("/movimentacoes", movimentacaoRoutes);
 
-app.use(cors({
-  origin: "http://localhost:3000",
-  credentials: true
-}));
+
 
 app.get("/", (req, res) => {
   res.send("API rodando!");
