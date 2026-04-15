@@ -23,7 +23,8 @@ export async function login(req, res) {
 
     res.cookie("accessToken", accessToken, {
       httpOnly: true,
-      sameSite: "strict"
+      sameSite: "lax",
+      secure: false
     });
 
     res.cookie("refreshToken", refreshToken, {
