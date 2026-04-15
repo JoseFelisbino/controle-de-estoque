@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="./dashboard.css">
+
+  <title>Dashboard</title>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>📊 Dashboard</h1>
+
+  <div class="grid grid-3">
+
+    <div class="card">
+      <h2>⚠️ Estoque baixo</h2>
+      <div id="estoque"></div>
+    </div>
+
+    <div class="card">
+      <h2>📦 Produtos por categoria</h2>
+      <div id="categorias"></div>
+    </div>
+
+    <div class="card">
+      <h2>🔄 Movimentações</h2>
+      <div id="movimentacoes"></div>
+    </div>
+
+  </div>
+</div>
+
+<script type="module" src="../js/controllers/dashboardController.js"></script>
+
+</body>
+</html>

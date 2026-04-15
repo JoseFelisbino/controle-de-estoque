@@ -5,24 +5,26 @@
 
   <link rel="stylesheet" href="../css/variables.css">
   <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="../css/pages/login.css">
   <link rel="stylesheet" href="../css/components/modal.css">
 
-  <title>Login</title>
+  <title>Cadastro</title>
 </head>
 
 <body>
   <div class="login-container">
-    <h1>Login</h1>
+    <h1>Cadastro</h1>
 
-    <form id="loginForm">
+    <form id="registerForm">
       <input type="email" id="email" placeholder="Email" required />
       <input type="password" id="senha" placeholder="Senha" required />
 
-      <button type="submit">Entrar</button>
+      <button type="submit">Cadastrar</button>
     </form>
+
+    <p>Já tem conta? <a href="login.html">Login</a></p>
   </div>
 
-  <script type="module" src="../js/controllers/authController.js"></script>
+  <script type="module" src="../js/controllers/registerController.js"></script>
 </body>
 </html>

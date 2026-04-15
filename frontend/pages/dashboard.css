@@ -1,0 +1,24 @@
+.card {
+  background: white;
+  padding: var(--spacing);
+  border-radius: var(--radius);
+}
+
+.critico {
+  background: var(--color-danger);
+  color: white;
+  padding: 5px;
+  border-radius: var(--radius);
+}
+
+.baixo {
+  background: var(--color-warning);
+  padding: 5px;
+  border-radius: var(--radius);
+}
+
+.normal {
+  background: var(--color-success);
+  padding: 5px;
+  border-radius: var(--radius);
+}

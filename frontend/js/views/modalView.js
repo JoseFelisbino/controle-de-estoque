@@ -15,4 +15,8 @@ export function showModal(message) {
   document.getElementById("closeModal").onclick = () => {
     modal.remove();
   };
+
+  setTimeout(() => {
+    modal.remove();
+  }, 2000);
 }

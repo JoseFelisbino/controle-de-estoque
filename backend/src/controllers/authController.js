@@ -29,7 +29,8 @@ export async function login(req, res) {
 
     res.cookie("refreshToken", refreshToken, {
       httpOnly: true,
-      sameSite: "strict"
+      sameSite: "lax",
+      secure: false
     });
 
     res.json({ message: "Login realizado com sucesso" });

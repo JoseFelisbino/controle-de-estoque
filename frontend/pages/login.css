@@ -16,10 +16,17 @@ input {
 }
 
 button {
-  padding: 10px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
   background: var(--color-primary);
-  color: white;
-  border: none;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: var(--radius);
   cursor: pointer;
+
+
 }
+
+
+  
