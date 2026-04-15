@@ -33,3 +33,19 @@ export function renderMovimentacoes(lista) {
     `)
     .join("");
 }
+
+export function renderProdutos(lista, onDelete) {
+  const div = document.getElementById("lista-produtos");
+
+  div.innerHTML = lista.map(p => `
+    <div class="card">
+      <strong>${p.nome}</strong>
+      <p>R$ ${p.preco}</p>
+      <p>Estoque: ${p.quantidade_estoque}</p>
+
+      <button onclick="window.deletar(${p.id})">Excluir</button>
+    </div>
+  `).join("");
+
+  window.deletar = onDelete;
+}
