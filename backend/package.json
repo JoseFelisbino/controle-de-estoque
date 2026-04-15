@@ -1,0 +1,30 @@
+{
+  "name": "controle-de-estoque",
+  "version": "1.0.0",
+  "description": "Catálogo de produtos com controle de estoque, incluindo relacionamentos entre entidades e regras de negócio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseFelisbino/controle-de-estoque.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JoseFelisbino/controle-de-estoque/issues"
+  },
+  "homepage": "https://github.com/JoseFelisbino/controle-de-estoque#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
