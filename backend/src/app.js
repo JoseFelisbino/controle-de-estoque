@@ -13,10 +13,7 @@ dotenv.config();
 
 const app = express();
 
-const allowedOrigins = [
-  "http://127.0.0.1:5500",
-  "http://localhost:5500"
-];
+
 
 app.use(cors({
   origin: function (origin, callback) {
@@ -24,8 +21,7 @@ app.use(cors({
     if (!origin) return callback(null, true);
 
     const isLocalhost =
-      origin.startsWith("http://localhost") ||
-      origin.startsWith("http://127.0.0.1");
+      origin.startsWith("https://controle-de-estoque-tp7j.onrender.com");
 
     if (isLocalhost) {
       return callback(null, true);
