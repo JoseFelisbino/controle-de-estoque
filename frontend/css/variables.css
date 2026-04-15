@@ -1,0 +1,12 @@
+:root {
+  --color-primaria: #4f46e5;
+  --color-perigo: #ef4444;
+  --color-aviso: #facc15;
+  --color-sucesso: #22c55e;
+
+  --color-bg: #f9fafb;
+  --color-text: #111827;
+
+  --radius: 8px;
+  --spacing: 16px;
+}
