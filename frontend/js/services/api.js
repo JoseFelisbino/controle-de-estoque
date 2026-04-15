@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://controle-de-estoque-tp7j.onrender.com";
 
 export async function registerRequest(data) {
   const res = await fetch(`${BASE_URL}/auth/register`, {
