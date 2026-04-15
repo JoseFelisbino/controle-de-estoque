@@ -1,0 +1,16 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--spacing);
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing);
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
