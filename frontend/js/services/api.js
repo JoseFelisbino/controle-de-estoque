@@ -48,3 +48,25 @@ export async function getMovimentacoes() {
 
   return res.json();
 }
+
+export async function criarProduto(data) {
+  const res = await fetch(`${BASE_URL}/produtos`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
+
+  if (!res.ok) throw new Error("Erro ao criar produto");
+
+  return res.json();
+}
+
+export async function deletarProduto(id) {
+  await fetch(`${BASE_URL}/produtos/${id}`, {
+    method: "DELETE",
+    credentials: "include"
+  });
+}

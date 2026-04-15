@@ -22,3 +22,11 @@
   padding: 5px;
   border-radius: var(--radius);
 }
+
+#btnNovo {
+  background: var(--color-primary);
+  padding: 10px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
